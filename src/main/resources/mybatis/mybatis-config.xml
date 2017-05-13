@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE configuration  
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- Type alias -->
+	<typeAliases>
+		<typeAlias alias="GalleryInfo" type="com.justdance.campaign.model.GalleryInfo"/>
+		<!-- <typeAlias alias="Dancers" type="com.justDance.mvmt.model.Dancers"/> -->
+	</typeAliases>
+
+	<!-- UserMap.xml 등록 -->
+	<mappers>
+		<mapper resource="com/justdance/campaign/mapper/GalleryMapper.xml"/>
+		<!-- <mapper resource="com/justDance/mvmt/mapper/DancersMapper.xml" /> -->
+	</mappers>
+</configuration> 
