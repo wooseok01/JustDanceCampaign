@@ -1,12 +1,8 @@
 package com.justdance.campaign;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,7 +31,7 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		
 		ArrayList<GalleryInfo> list = galleryDao.getAllGallery();
-		System.out.println(list);
+		model.addAttribute("list",list);
 		
 		return "index";
 	}

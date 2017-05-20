@@ -49,5 +49,13 @@ public class GalleryInfo implements Serializable {
 	public void setgFontUrl(String gFontUrl) {
 		this.gFontUrl = gFontUrl;
 	}
+
+	@Override
+	public String toString() {
+		return "GalleryInfo [gId=" + gId + ", gName=" + gName + ", gBackgroundUrl=" + gBackgroundUrl + ", gFontUrl="
+				+ gFontUrl + "]\n";
+	}
+	
+	
 	
 }
